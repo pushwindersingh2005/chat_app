@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <script src="http://localhost:8001/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/client.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <div class="online-count">
+            <i class="fas fa-user-friends"></i>
+            <span id="userCount">0 online</span>
+        </div>
+        <h1>Chat App</h1>
+        <img class="logo" src="image/chat.png" alt="Chat Logo">
+    </nav>
+
+    <div class="container" id="messageContainer">
+        <!-- Messages will appear here dynamically -->
+    </div>
+
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp" id="messageInp" placeholder="Type your message...">
+            <button class="btn" type="submit">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </form>
+    </div>
+
+    <audio id="notificationSound" src="sound/mixkit-long-pop-2358.wav" preload="auto"></audio>
+</body>
+
+</html>
