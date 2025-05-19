@@ -1,5 +1,7 @@
 # Real-Time Chat Application
 
+![Chat App Preview](image/Chat_App.png)
+
 A modern real-time chat application built with HTML, CSS, and JavaScript using WebSockets for instant communication.
 
 ## Features
